@@ -11,7 +11,7 @@ function Navbar({ setPage }) {
   return (
     <nav className="navbar">
       {/* <div className="logo">ME</div> */}
-      <img src="MalgangaEn.png" alt="Pump Machine" width="50" height="50" />
+      <img src="/MalgangaEn.png" alt="Pump Machine" width="50" height="50" />
       <ul className="nav-links">
         <li onClick={() => setPage("home")}>Home</li>
         <li onClick={() => scrollToSection("about")}>About Us</li>
