@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+}
+
+.app-container {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: white;
+  padding: 0px 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #ff5722;
+}
+
+.bill-btn {
+  background: #ff5722;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.page-container {
+  padding: 30px;
+}
+
+.home {
+  padding: 60px;
+  background: url("https://picsum.photos/1200/500") no-repeat center;
+  background-size: cover;
+  color: white;
+  border-radius: 10px;
+}
+
+.about, .products, .contact {
+  margin: 30px auto;
+  max-width: 800px;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+}
+
+.product-card {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.login-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.login-box button {
+  padding: 8px 15px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.download-btn{
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #2ab3f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo bounce */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  background: url("https://picsum.photos/1200/500") no-repeat center/cover;
+  border-radius: 10px;
+  margin: 20px auto;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Sections */
+.section {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+.section:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.section:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+/* Products */
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.product-card {
+  width: 250px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Navbar Animations */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation: bounce 2s infinite;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #f0a500;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #f0a500;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Button glow effect */
+.bill-btn {
+  background: #f0a500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.bill-btn:hover {
+  background: #ffba42;
+  box-shadow: 0px 0px 10px rgba(240, 165, 0, 0.7);
+}
+
+.section {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+  color: #222;   /* ✅ text visible now */
+}
+
+.section h2 {
+  color: #f0a500; /* ✅ highlight section title in gold */
+  margin-bottom: 15px;
+}
