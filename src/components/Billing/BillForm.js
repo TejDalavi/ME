@@ -223,13 +223,13 @@ function BillForm() {
         <div className="form-header">
           <div>
             <label>Bill No: </label>
-            <input type="text" value={billNo} onChange={(e) => setBillNo(e.target.value)} />
+            <input type="text" value={billNo} onChange={(e) => setBillNo(e.target.value)} required/>
             <label>Name: </label>
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+            <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
           </div>
           <div>
             <label>Date: </label>
-            <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+            <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
           </div>
         </div>
 
@@ -252,6 +252,7 @@ function BillForm() {
                     type="text"
                     value={row.particular}
                     onChange={(e) => handleChange(index, "particular", e.target.value)}
+                    required
                   />
                 </td>
                 <td>
@@ -259,6 +260,7 @@ function BillForm() {
                     type="number"
                     value={row.qty}
                     onChange={(e) => handleChange(index, "qty", parseInt(e.target.value) || 0)}
+                    required
                   />
                 </td>
                 <td>
@@ -266,6 +268,7 @@ function BillForm() {
                     type="number"
                     value={row.rate}
                     onChange={(e) => handleChange(index, "rate", parseInt(e.target.value) || 0)}
+                    required
                   />
                 </td>
                 <td>{row.amount}</td>
