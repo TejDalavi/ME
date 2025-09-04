@@ -9,6 +9,7 @@ function Navbar({ setPage }) {
   };
 
   return (
+    //logo
     <nav className="navbar">
       {/* <div className="logo">ME</div> */}
       <img src={process.env.PUBLIC_URL + "/MalgangaEn.png"} alt="Pump Machine" width="50" height="50" />
