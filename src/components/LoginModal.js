@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function LoginModal({ onLogin }) {
   const [password, setPassword] = useState("");
-  const correctPassword = "datta123"; // 🔑 set your own password
+  const correctPassword = "Datta123"; // 🔑 set your own password
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
