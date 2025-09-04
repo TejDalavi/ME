@@ -5,7 +5,7 @@ function Home() {
     <div className="home">
       {/* Hero Section */}
       <div className="hero">
-        <h1>Welcome to ME Enterprises</h1>
+        <h1>Welcome to Malganga Enterprises</h1>
         <p>Your trusted partner for RMC concrete pump services.</p>
       </div>
 
