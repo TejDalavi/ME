@@ -47,7 +47,7 @@ function Home() {
         <h2>Contact Us</h2>
         <p>📍 Room No. 301, Shubham Apartment, Baap Goan, Thane Bhiwandi</p>
         <p>📞 8291358469 / 8788284288</p>
-        <p>✉️ info@meenterprises.com</p>
+        <p>✉️ info@gmail.com</p>
       </section>
     </div>
   );
