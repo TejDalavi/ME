@@ -6,7 +6,7 @@ function Home() {
       {/* Hero Section */}
       <div className="hero">
         <h1>Welcome to Malganga Enterprises</h1>
-        <p>Your trusted partner for RMC concrete pump services.</p>
+        <p>Your trusted partner for RMC COM Pump services.</p>
       </div>
 
       {/* About Section */}
